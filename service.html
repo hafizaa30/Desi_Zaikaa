@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Page</title>
+    
+</head>
+<body>
+
+    <!-- Navbar -->
+    <div class="navbar">
+        <div class="logo">Desi Zaika</div>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="fvrt.html">Our Favourites</a></li>
+            <li><a href="order.html">Order Now</a></li>
+        </ul>
+    </div>
+
+    <div class="container">
+        <h1>Our Services</h1>
+        <h6>What We Offer</h6>
+
+        
+        <div class="service-box-row">
+            <div class="service-box">
+                <img src="https://images.pexels.com/photos/1456613/pexels-photo-1456613.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Wedding Service">
+                <h3>Wedding</h3>
+                <p>When a family celebrates an event, it's an occasion. When a lot of people celebrate together, it becomes a feast. Can there be a feast without food? We are here to create a memorable experience for your guests by pampering their taste buds.</p>
+                <a href="order.html" class="order-btn">Order Now</a>
+            </div>
+
+            <div class="service-box">
+                <img src="https://images.pexels.com/photos/3156648/pexels-photo-3156648.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Engagement Service">
+                <h3>Engagement</h3>
+                <p>Engagement marks the first step in the wedding journey, symbolizing the bond and commitment between two individuals. These occasions are often celebrated in a grand and memorable way. For us, the satisfaction of our guests, particularly through exceptional food, is a top priority.</p>
+                <a href="order.html" class="order-btn">Order Now</a>
+            </div>
+        </div>
+
+        
+        <div class="service-box-row">
+            <div class="service-box">
+                <img src="https://images.pexels.com/photos/7561328/pexels-photo-7561328.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Birthday Party Service">
+                <h3>Birthday Parties</h3>
+                <p>A birthday party is a wonderful opportunity to celebrate life and create unforgettable moments with loved ones. These celebrations are designed to bring joy and happiness to everyone involved. For us, guest satisfaction is paramount, and we place special emphasis on providing exceptional food to make the occasion even more delightful.</p>
+                <a href="order.html" class="order-btn">Order Now</a>
+            </div>
+
+            <div class="service-box">
+                <img src="https://images.pexels.com/photos/6405773/pexels-photo-6405773.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Corporate Event Service">
+                <h3>Corporate Events</h3>
+                <p>Corporate events serve as an ideal platform to connect, collaborate, and celebrate professional milestones. These occasions are thoughtfully curated to leave a lasting impression. For us, attendee satisfaction is key, and we prioritize delivering exceptional food to elevate the overall experience.</p>
+                <a href="order.html" class="order-btn">Order Now</a>
+            </div>
+        </div>
+    </div>
+</body>
+<style>
+        
+    body {
+        font-family: 'Arial', sans-serif;
+        margin: 0;
+        padding: 0;
+        background-image: url('https://images.pexels.com/photos/541216/pexels-photo-541216.jpeg?auto=compress&cs=tinysrgb&w=600'); /* Replace with your image URL */
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        color: #c32f27; 
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }
+
+    
+    .navbar {
+        background-color: #C32F27;  
+        padding: 15px 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: white;
+    }
+
+    .navbar .logo {
+        font-size: 24px;
+        font-weight: bold;
+        color: #ffe8d6; 
+    }
+
+    .navbar ul {
+        list-style: none;
+        display: flex;
+        gap: 20px;
+    }
+
+    .navbar ul li {
+        display: inline-block;
+    }
+
+    .navbar ul li a {
+        color: white;
+        text-decoration: none;
+        font-size: 18px;
+        padding: 10px 15px;
+        transition: background-color 0.3s ease;
+    }
+
+    .navbar ul li a:hover {
+        background-color: #ffe8d6;
+        border-radius: 5px;
+    }
+
+    
+    h1, h6 {
+        text-align: center;
+        color: #ffe8d6; 
+        margin-bottom: 15px;
+        font-weight: bold;
+    }
+
+    .container {
+        width: 90%;
+        max-width: 1200px;
+        margin: 40px auto;
+        padding: 20px;
+        flex-grow: 1;
+        background-color: rgba(255, 255, 255, 0.8); 
+        border-radius: 10px;
+        box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+    }
+
+    
+    .service-box-row {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+        margin-bottom: 30px;
+    }
+
+    .service-box {
+        background-color: rgba(255, 255, 255, 0.8);  
+        padding: 20px;
+        border-radius: 12px;
+        box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+        flex: 1 1 calc(50% - 20px);  
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        min-width: 280px;
+    }
+
+    .service-box img {
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+        border-radius: 12px;
+    }
+
+    .service-box h3 {
+        font-size: 26px;
+        color: #c32f27; 
+        margin-bottom: 15px;
+        font-weight: 600;
+    }
+
+    .service-box p {
+        color: #6b705c; 
+        line-height: 1.6;
+        font-size: 16px;
+    }
+
+    
+    .order-btn {
+        display: inline-block;
+        padding: 10px 25px;
+        background-color: #C32F27; 
+        color: white;
+        font-size: 16px;
+        text-align: center;
+        border-radius: 5px;
+        text-decoration: none;
+        margin-top: 15px;
+        transition: background-color 0.3s ease;
+    }
+
+    .order-btn:hover {
+        background-color: #d8572a; 
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+        .service-box {
+            flex: 1 1 calc(50% - 20px);  
+        }
+
+        .navbar ul {
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .service-box {
+            flex: 1 1 100%;  
+        }
+    }
+</style>
+</html>

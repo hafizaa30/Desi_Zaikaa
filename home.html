@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desi Zaika - Home</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+   
+<nav class="navbar">
+    <div class="logo">Desi Zaika</div>
+    <div>
+        <a href="home.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="service.html">Services</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="fvrt.html">Our Favourites</a>
+        <a href="order.html" class="order-now-btn">Order Now</a>
+        <a href="signin.html">Sign In</a>
+    </div>
+</nav>
+
+    <section class="home" id="home">
+        <div class="home-overlay"></div>
+        <div class="home-content">
+            <h1>Welcome to Desi Zaika</h1>
+            <p>Experience the true flavors of India, crafted with love & tradition.</p>
+            <a href="menu.html" class="btn-explore">Explore Our Menu</a>
+        </div>
+    </section>
+
+    <section class="why-choose" id="services">
+        <h2>Why Choose Us?</h2>
+        <div class="feature-box">
+            <div class="feature">
+                <img src="https://cdn-icons-png.flaticon.com/512/869/869636.png" alt="Fresh Ingredients">
+                <h4>Fresh Ingredients</h4>
+                <p>We let the quality of our fresh ingredients shine through in every dish we create.</p>
+            </div>
+            <div class="feature">
+                <img src="https://cdn-icons-png.flaticon.com/512/1067/1067461.png" alt="Authentic Recipes">
+                <h4>Authentic Recipes</h4>
+                <p>Our recipes are inspired by traditional Indian flavors.</p>
+            </div>
+            <div class="feature">
+                <img src="https://cdn-icons-png.flaticon.com/512/3075/3075977.png" alt="Great Ambience">
+                <h4>Great Ambience</h4>
+                <p>Escape the hustle and bustle and enjoy a tranquil dining experience.</p>
+            </div>
+        </div>
+    </section>
+
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #cb997e; 
+            color: #ddbea9; 
+            margin: 0;
+            padding: 0;
+        }
+
+        
+        .navbar {
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            padding: 15px 40px;
+            transition: 0.4s;
+            background: #6b705c; 
+            z-index: 100;
+        }
+
+        .navbar a {
+            color: #ffe8d6; 
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .navbar a:hover {
+            color: #a5a58d; 
+        }
+
+        
+        .home {
+            height: 100vh;
+            background: url('https://media.istockphoto.com/id/1250567402/photo/table-top-view-of-indian-food.jpg?b=1&s=612x612&w=0&k=20&c=n2bAkONqFXuAYC6yW3xcxyZbl22OQLlqUiUYWwL2pRE=') center/cover no-repeat;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            position: relative;
+        }
+
+        .home-overlay {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.4);
+        }
+
+        .home-content {
+            position: relative;
+            z-index: 2;
+        }
+
+        .home h1 {
+            font-size: 60px;
+            font-weight: 700;
+            color: #ffe8d6;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+        }
+
+        .home p {
+            font-size: 22px;
+            margin-bottom: 20px;
+            color: #ffe8d6; 
+        }
+
+        .btn-explore {
+            background: #a5a58d; 
+            color: #34091e;
+            font-weight: bold;
+            padding: 12px 24px;
+            border-radius: 8px;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        .btn-explore:hover {
+            background: #b7b7a4; 
+        }
+
+        
+        .why-choose {
+            padding: 50px;
+            text-align: center;
+            background: #6b705c;      }
+
+        .why-choose h2 {
+            color: #ffe8d6; 
+            margin-bottom: 30px;
+        }
+
+        .feature-box {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .feature {
+            background: #b7b7a4; 
+            padding: 20px;
+            border-radius: 8px;
+            width: 250px;
+            text-align: center;
+        }
+
+        .feature h4 {
+            color: #ffe8d6; 
+        }
+
+        .feature p {
+            color: #f3dbea; 
+        }
+
+        .feature img {
+            width: 80px;
+        }
+
+        .order-now-btn {
+            background-color: #34091e; 
+            color: #ffe8d6; 
+            padding: 8px 15px;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        .order-now-btn:hover {
+            background-color: #ca5310; 
+        }
+    </style>
+
+</body>
+</html>

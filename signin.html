@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+   
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand" href="#">Indian Cuisine</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="home.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="menu.html">Menu</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact Us</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="home.html">Sign In <span class="sr-only">(current)</span></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    
+    <div class="container">
+        <h2>Sign In</h2>
+        <form id="signInForm">
+            <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" class="form-control" id="name" placeholder="Enter your full name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+            </div>
+            <div class="form-group">
+                <label for="address">Address</label>
+                <input type="text" class="form-control" id="address" placeholder="Enter your address" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" class="form-control" id="phone" placeholder="Enter your phone number" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" class="form-control" id="password" placeholder="Enter your password" required>
+            </div>
+            <div class="form-group">
+                <button type="submit" class="btn btn-primary">Sign In</button>
+            </div>
+        </form>
+    </div>
+
+    
+    <div class="footer">
+        <p>&copy; Desi Zaika | All Rights Reserved</p>
+    </div>
+
+    <!-- Bootstrap JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!--  form submission and redirect -->
+    <script>
+        document.getElementById('signInForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent form from submitting
+
+            
+
+            
+            window.location.href = 'home.html';
+        });
+    </script>
+</body>
+<style>
+        
+    body {
+        font-family: 'Poppins', sans-serif;
+        background-image: url('https://images.pexels.com/photos/958547/pexels-photo-958547.jpeg?auto=compress&cs=tinysrgb&w=600'); /* Replace with your image URL */
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        padding-top: 70px; 
+    }
+
+    .navbar {
+        margin-bottom: 30px;
+    }
+
+    .container {
+        max-width: 600px;
+        background-color: rgba(255, 255, 255, 0.8); 
+        padding: 30px;
+        border-radius: 8px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+        text-align: center;
+        margin-bottom: 20px;
+        color: #a31d1d;
+    }
+
+    .form-group {
+        margin-bottom: 15px;
+    }
+
+    .form-group input {
+        border-radius: 5px;
+        padding: 12px;
+        font-size: 16px;
+    }
+
+    .form-group button {
+        background-color: #a31d1d;
+        color: white;
+        font-size: 16px;
+        border: none;
+        padding: 12px 20px;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+
+    .form-group button:hover {
+        background-color: #ffcc00;
+        color: #a31d1d;
+    }
+
+    .footer {
+        text-align: center;
+        padding: 20px 0;
+        background-color: #343a40;
+        color: white;
+    }
+</style>
+</html>
